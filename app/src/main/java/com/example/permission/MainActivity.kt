@@ -81,15 +81,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    //Real Path From Uri
-    /*private fun getRealPathFromUri(uri: Uri?): String? {
-        val place = MediaStore.Images.Media.DATA
-        val cursor: Cursor? = contentResolver.query(uri!!, null, null, null, null)
-        cursor?.moveToFirst()
-        val columnIndex: Int? = cursor?.getColumnIndex(place)
-        return cursor?.getString(columnIndex!!)
-    }*/
-
     //Create a Notification
     private fun showNotification(title: String, description: String) {
         val channelId = "notification"
